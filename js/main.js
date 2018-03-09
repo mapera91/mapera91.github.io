@@ -209,13 +209,13 @@ var contEliminados = function () {
             ganador.classList.add("open");
             winner.currentTime = 0;
             winner.play();
-        },1500);
-    }    
-    setTimeout(function(){
-        while(rejilla.firstChild) {
-            rejilla.removeChild(rejilla.firstChild);
-        }
-    },1000);
+        },1500);   
+        setTimeout(function(){
+            while(rejilla.firstChild) {
+                rejilla.removeChild(rejilla.firstChild);
+            }
+        },1000);
+    }
 }
 
 
