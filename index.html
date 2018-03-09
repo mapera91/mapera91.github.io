@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokemon Memory Game</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+
+    <div class="cabecera">
+        <button onclick="barajar();cuentaAtras();" id="iniciar">Start</button>
+        <div id="reloj"></div>
+    </div>
+
+    <div id="comentario">
+        <img src="./img/Pokemon-logo-497D61B223-seeklogo.com.png">
+        <p>Podras resolverlo antes de que se acabe el tiempo</p> 
+    </div>
+
+    <div id="game"></div>
+    <div id="perdedor">
+        <p>GAME OVER!</p>
+    </div>
+    <img src="./img/logo.png" class="logo" id="ganador">
+
+
+    <audio id="song" src="./audio/song.mp3"></audio>
+    <audio id="fail" src="./audio/fail.mp3"></audio>
+    <audio id="winner" src="./audio/winner.mp3"></audio>
+
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
